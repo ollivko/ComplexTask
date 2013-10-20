@@ -1,0 +1,30 @@
+USE ComputerStore;
+
+CREATE TABLE CPU(
+   id_CPU int ,
+   name text,
+   manufacturer text,
+   frequency float,
+   PRIMARY KEY (id_CPU)
+);
+
+CREATE TABLE Display(
+   id_display int,
+   name text,
+   type text,
+   resolution text,
+   diagonal float,
+   PRIMARY KEY (id_display)
+);
+
+CREATE TABLE Notebook(
+   id_notebook int NOT NULL AUTO_INCREMENT,
+   model text,
+   manufacturer text,
+   id_CPU int,
+   id_display int,
+   RAM int,
+   HDD int,
+   price int,
+   PRIMARY KEY (id_notebook)
+);

@@ -1,0 +1,20 @@
+INSERT INTO CPU
+VALUES ('2021','i5','Intel','1.7'),
+	('2022','i7','Intel','2.4'),
+	('2023','i5','Intel','2.6'),
+	('2024','A8','AMD','2.1'),
+	('2025','Atom','Intel','1.86');
+
+INSERT INTO Display
+VALUES ('3010','WXGA HD','LED','1366x768','13.3'),
+	('3011','FULL HD','IPS LED','1920x1080','15.6'),
+	('3012','HD','LED','1600x900','14'),
+	('3013','HD','LED','1366x768','15.6'),
+	('3014','WSVGA','LED','1024x600','10.1');
+
+INSERT INTO Notebook (model,manufacturer,id_cpu,id_display,RAM,HDD,price)
+VALUES ('ZenBook','Asus','2021','3010','4','500','7940'),
+	('Envy15','HP','2022','3011','6','750','8888'),
+	('ThinkPad T430','Lenovo','2023','3012','4','500','9587'),
+	('X550DP','Asus','2024','3013','4','750','4637'),
+	('IdeaPad S110','Lenovo','2025','3014','2','500','2384');

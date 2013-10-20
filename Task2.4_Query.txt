@@ -1,0 +1,7 @@
+SELECT model, manufacturer, price FROM Notebook WHERE price>3000 AND price<9000 AND RAM=4;
+
+SELECT Notebook.model, Notebook.manufacturer, Notebook.price, Display.diagonal,CPU.manufacturer, CPU.name
+FROM Notebook JOIN Display ON (Notebook.id_display=display.id_display) JOIN CPU ON (Notebook.id_CPU=CPU.id_CPU)
+WHERE Display.type='LED' AND notebook.HDD=500;
+
+SELECT COUNT(manufacturer) FROM CPU WHERE manufacturer='Intel';
